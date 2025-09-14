@@ -1,9 +1,9 @@
-NAME = Animals
+NAME = Brain
 
 CC = c++
-CFLAGS = -Wall -Werror -Wextra -std=c++98 -g3
+CFLAGS = -Wall -Werror -Wextra -std=c++98 
 
-SOURCES = main.cpp Animal.cpp Dog.cpp Cat.cpp WrongAnimal.cpp WrongCat.cpp
+SOURCES = main.cpp Animal.cpp Dog.cpp Cat.cpp Brain.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 
 %.o: %.cpp
