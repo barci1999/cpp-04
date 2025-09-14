@@ -6,7 +6,7 @@
 /*   By: pablalva <pablalva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 19:20:56 by pablalva          #+#    #+#             */
-/*   Updated: 2025/09/14 19:23:15 by pablalva         ###   ########.fr       */
+/*   Updated: 2025/09/14 20:19:34 by pablalva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,6 +26,6 @@ public:
 
 	std::string getType() const;
 	void makeSound()const;
-	~WrongAnimal();
+	virtual~WrongAnimal();
 };
 #endif
