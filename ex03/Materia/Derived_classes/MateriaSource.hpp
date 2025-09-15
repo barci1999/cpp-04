@@ -6,7 +6,7 @@
 /*   By: pablalva <pablalva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 18:33:07 by pablalva          #+#    #+#             */
-/*   Updated: 2025/09/15 19:04:03 by pablalva         ###   ########.fr       */
+/*   Updated: 2025/09/15 23:42:06 by pablalva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,14 +22,9 @@ public:
 	MateriaSource(const MateriaSource& other);
 	MateriaSource& operator=(const MateriaSource& other);
 	~MateriaSource();
+
+	void learnMateria(AMateria*);
+	AMateria* createMateria(std::string const & type);
 };
-
-MateriaSource::MateriaSource(/* args */)
-{
-}
-
-MateriaSource::~MateriaSource()
-{
-}
 
 #endif

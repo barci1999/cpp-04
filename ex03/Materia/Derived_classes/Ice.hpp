@@ -6,7 +6,7 @@
 /*   By: pablalva <pablalva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 18:33:05 by pablalva          #+#    #+#             */
-/*   Updated: 2025/09/15 19:03:09 by pablalva         ###   ########.fr       */
+/*   Updated: 2025/09/15 22:47:11 by pablalva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,21 +16,14 @@
 
 class Ice : public AMateria
 {
-private:
-	/* data */
 public:
 	Ice();
 	Ice(const Ice& other);
 	Ice& operator=(const Ice& other);
 	~Ice();
+
+	AMateria* clone() const;
+	void use(ICharacter& target);
 };
-
-Ice::Ice(/* args */)
-{
-}
-
-Ice::~Ice()
-{
-}
 
 #endif
