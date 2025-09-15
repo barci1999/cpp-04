@@ -6,11 +6,31 @@
 /*   By: pablalva <pablalva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/15 18:33:00 by pablalva          #+#    #+#             */
-/*   Updated: 2025/09/15 18:38:35 by pablalva         ###   ########.fr       */
+/*   Updated: 2025/09/15 19:01:31 by pablalva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CHARACTER_HPP
 # define CHARACTER_HPP
+# include "ICharacter.hpp"
+class Character : public ICharacter
+{
+private:
+	/* data */
+public:
+	Character();
+	Character(const Character& other);
+	Character& operator=(const Character& other);
+	~Character();
+	
+};
+
+Character::Character(/* args */)
+{
+}
+
+Character::~Character()
+{
+}
 
 #endif
