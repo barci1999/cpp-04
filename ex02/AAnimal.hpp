@@ -1,31 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   AAnimal.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pablalva <pablalva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/15 16:25:33 by pablalva          #+#    #+#             */
-/*   Updated: 2025/09/15 17:25:45 by pablalva         ###   ########.fr       */
+/*   Created: 2025/09/14 14:41:34 by pablalva          #+#    #+#             */
+/*   Updated: 2025/09/15 16:38:57 by pablalva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"AAnimal.hpp"
-#include"Dog.hpp"
-#include"Cat.hpp"
-#include"Brain.hpp"
-int main() 
+#ifndef AAnimal_HPP
+# define AAnimal_HPP
+# include<iostream>
+# include<string>
+class AAnimal
 {
-    /*AAnimal a;
-	a.makeSound();*/
+protected:
+	std::string type;
+	AAnimal(std::string type);
+public:
+	AAnimal(/* args */);
+	AAnimal(const AAnimal& other);
+	AAnimal& operator=(const AAnimal& other);
 
-    const AAnimal* dog = new Dog();
-    const AAnimal* cat = new Cat();
-
-    dog->makeSound(); 
-
-    cat->makeSound(); 
-    delete dog;
-    delete cat;
-    return 0;
-}
+	std::string getType() const;
+	virtual void makeSound()const = 0;
+	virtual void searchBrain() const = 0;
+	virtual ~AAnimal();
+};
+#endif

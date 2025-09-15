@@ -6,18 +6,18 @@
 /*   By: pablalva <pablalva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 14:41:46 by pablalva          #+#    #+#             */
-/*   Updated: 2025/09/14 21:48:30 by pablalva         ###   ########.fr       */
+/*   Updated: 2025/09/15 17:23:50 by pablalva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Cat.hpp"
 
-Cat::Cat() : Animal("Cat")
+Cat::Cat() : AAnimal("Cat")
 {
 	std::cout << "Cat constructor called." << std::endl; 
 	this->brain = new Brain();
 }
-Cat::Cat(const Cat& other) : Animal(other)
+Cat::Cat(const Cat& other) : AAnimal(other)
 {
 	std::cout << "Cat copy constructor called." << std::endl;
 	this->brain = new Brain(*other.brain);
@@ -25,7 +25,7 @@ Cat::Cat(const Cat& other) : Animal(other)
 Cat& Cat::operator=(const Cat& other) 
 {
 	std::cout << "Cat assignment operator called." << std::endl;
-	Animal::operator=(other); 
+	AAnimal::operator=(other); 
 	delete this->brain;
 	this->brain = new Brain(*other.brain);
 	return(*this);

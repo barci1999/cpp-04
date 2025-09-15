@@ -6,19 +6,19 @@
 /*   By: pablalva <pablalva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 14:41:51 by pablalva          #+#    #+#             */
-/*   Updated: 2025/09/14 21:54:50 by pablalva         ###   ########.fr       */
+/*   Updated: 2025/09/15 17:23:50 by pablalva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 #include "Brain.hpp"
 
-Dog::Dog(/* args */) : Animal("Dog")
+Dog::Dog(/* args */) : AAnimal("Dog")
 {
 	std::cout << "Dog default constructor called." << std::endl;
 	this->brain = new Brain();
 }
-Dog::Dog(const Dog& other): Animal(other)
+Dog::Dog(const Dog& other): AAnimal(other)
 {
 	std::cout << "Dog copy constructor called." << std::endl;
 	this->brain = new Brain(*other.brain);
@@ -26,7 +26,7 @@ Dog::Dog(const Dog& other): Animal(other)
 Dog& Dog::operator=(const Dog& other) 
 {
 	std::cout << "Dog assignmet operator called." << std::endl;
-	Animal::operator=(other);
+	AAnimal::operator=(other);
 	delete this->brain;
 	this->brain = new Brain(*other.brain);
 	return(*this);

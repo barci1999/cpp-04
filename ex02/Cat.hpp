@@ -6,15 +6,15 @@
 /*   By: pablalva <pablalva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 14:41:48 by pablalva          #+#    #+#             */
-/*   Updated: 2025/09/14 21:41:42 by pablalva         ###   ########.fr       */
+/*   Updated: 2025/09/15 17:23:50 by pablalva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef CAT_HPP
 # define CAT_HPP
-# include "Animal.hpp"
+# include "AAnimal.hpp"
 # include "Brain.hpp"
-class Cat : public Animal
+class Cat : public AAnimal
 {
 private:
 	Brain* brain;

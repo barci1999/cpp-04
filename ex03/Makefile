@@ -1,9 +1,9 @@
-NAME = abstract
+NAME = amateria
 
 CC = c++
 CFLAGS = -Wall -Werror -Wextra -std=c++98 
 
-SOURCES = main.cpp AAnimal.cpp Dog.cpp Cat.cpp Brain.cpp
+SOURCES = main.cpp AMateria.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 
 %.o: %.cpp

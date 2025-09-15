@@ -1,31 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   AMateria.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pablalva <pablalva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/09/15 16:25:33 by pablalva          #+#    #+#             */
-/*   Updated: 2025/09/15 17:25:45 by pablalva         ###   ########.fr       */
+/*   Created: 2025/09/15 16:42:14 by pablalva          #+#    #+#             */
+/*   Updated: 2025/09/15 16:42:15 by pablalva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"AAnimal.hpp"
-#include"Dog.hpp"
-#include"Cat.hpp"
-#include"Brain.hpp"
-int main() 
-{
-    /*AAnimal a;
-	a.makeSound();*/
-
-    const AAnimal* dog = new Dog();
-    const AAnimal* cat = new Cat();
-
-    dog->makeSound(); 
-
-    cat->makeSound(); 
-    delete dog;
-    delete cat;
-    return 0;
-}

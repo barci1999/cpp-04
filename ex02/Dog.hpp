@@ -6,16 +6,16 @@
 /*   By: pablalva <pablalva@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/09/14 14:41:56 by pablalva          #+#    #+#             */
-/*   Updated: 2025/09/15 16:29:16 by pablalva         ###   ########.fr       */
+/*   Updated: 2025/09/15 17:23:50 by pablalva         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef DOG_HPP
 # define DOG_HPP
-# include "Animal.hpp"
+# include "AAnimal.hpp"
 # include "Brain.hpp"
 
-class Dog : public Animal
+class Dog : public AAnimal
 {
 private:
 	Brain* brain;
