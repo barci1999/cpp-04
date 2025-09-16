@@ -1,9 +1,9 @@
 NAME = amateria
 
 CC = c++
-CFLAGS = -Wall -Werror -Wextra -std=c++98 
+CFLAGS = -Wall -Werror -Wextra -std=c++98 -g3
 
-SOURCES = main.cpp AMateria.cpp
+SOURCES = main.cpp AMateria.cpp Character.cpp Cure.cpp Ice.cpp MateriaSource.cpp
 OBJECTS = $(SOURCES:.cpp=.o)
 
 %.o: %.cpp
